@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Okpoc_0009">
+
+    <ImageView
+        android:id="@+id/imgComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/img_password_done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCompleteMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/okpoc_0011_str_001"
+        android:textColor="@color/color_005"
+        android:textSize="19sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgComplete" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/color_010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCompleteMsg" />
+
+
+    <TextView
+        android:id="@+id/txtRequestPointInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_002"
+        android:textColor="@color/color_008"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider" />
+
+    <TextView
+        android:id="@+id/txtRequestPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:lineSpacingExtra="7sp"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRequestPointInfo"
+        app:layout_constraintEnd_toStartOf="@+id/txtP"
+        app:layout_constraintTop_toTopOf="@+id/txtRequestPointInfo"
+        tools:text="2,300" />
+
+    <TextView
+        android:id="@+id/txtP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_006"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRequestPointInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtRequestPointInfo" />
+
+    <TextView
+        android:id="@+id/txtAfterPointInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_003"
+        android:textColor="@color/color_008"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRequestPoint" />
+
+    <TextView
+        android:id="@+id/txtAfterPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:lineSpacingExtra="7sp"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAfterPointInfo"
+        app:layout_constraintEnd_toStartOf="@+id/txtP2"
+        app:layout_constraintTop_toTopOf="@+id/txtAfterPointInfo"
+        tools:text="53,700" />
+
+    <TextView
+        android:id="@+id/txtP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_006"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAfterPointInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtAfterPointInfo" />
+
+    <TextView
+        android:id="@+id/txtAfterCoinInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_004"
+        android:textColor="@color/color_008"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAfterPointInfo" />
+
+    <TextView
+        android:id="@+id/txtAfterCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:lineSpacingExtra="7sp"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAfterCoinInfo"
+        app:layout_constraintEnd_toStartOf="@+id/txtC"
+        app:layout_constraintTop_toTopOf="@+id/txtAfterCoinInfo"
+        tools:text="2,300" />
+
+    <TextView
+        android:id="@+id/txtC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_007"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAfterCoinInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtAfterCoinInfo" />
+
+    <TextView
+        android:id="@+id/txtRequestDateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0011_str_005"
+        android:textColor="@color/color_008"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAfterCoinInfo" />
+
+    <TextView
+        android:id="@+id/txtRequestDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:lineSpacingExtra="7sp"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtRequestDateInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtRequestDateInfo"
+        tools:text="마이너스OK론" />
+
+    <View
+        android:id="@+id/viewDivider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/color_010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRequestDateInfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/okpoc_0011_str_008"
+        android:textColor="@color/color_001"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider2" />
+
+    <Button
+        android:id="@+id/txtExchangeConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_004"
+        android:text="@string/okpoc_0011_str_009"
+        android:textColor="@color/color_003"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_003"
+    tools:context=".Okpoc_0010">
+
+    <include layout="@layout/layout_common_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txtShowPointCoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_013"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/exchange_point_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtPointTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/okpoc_0010_str_002"
+                android:textColor="@color/color_005"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="19dp"
+                android:lineSpacingExtra="8sp"
+                android:textColor="@color/color_004"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/txtPointTitle"
+                app:layout_constraintEnd_toStartOf="@+id/txtP"
+                app:layout_constraintTop_toTopOf="@+id/txtPointTitle"
+                tools:text="56,000" />
+
+            <TextView
+                android:id="@+id/txtP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/okpoc_0010_str_003"
+                android:textColor="@color/color_005"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/txtPoint"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imgPointArrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/img_point_arrow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constPoint" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/exchange_point_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPointArrow">
+
+            <TextView
+                android:id="@+id/txtCoinTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:lineSpacingExtra="7sp"
+                android:text="@string/okpoc_0010_str_004"
+                android:textColor="@color/color_005"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="19dp"
+                android:lineSpacingExtra="8sp"
+                android:textColor="@color/color_004"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/txtCoinTitle"
+                app:layout_constraintEnd_toStartOf="@+id/txtC"
+                app:layout_constraintTop_toTopOf="@+id/txtCoinTitle"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/txtC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/okpoc_0010_str_005"
+                android:textColor="@color/color_005"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/txtCoin"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/etInputExchangePoint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/okpoc_0010_str_006"
+        android:textColor="@color/color_005"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:paddingEnd="45dp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtShowPointCoin" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/color_010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etInputExchangePoint" />
+
+    <ImageView
+        android:id="@+id/imgResetPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_textfield_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDivider"
+        app:layout_constraintEnd_toEndOf="@+id/etInputExchangePoint"
+        app:layout_constraintTop_toTopOf="@+id/etInputExchangePoint"
+        tools:visibility="visible"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearAddAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDivider">
+
+        <TextView
+            android:id="@+id/plus1000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/exchange_point_amount_bg"
+            android:gravity="center"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/okpoc_0010_str_007"
+            android:textColor="@color/color_002"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/plus5000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/exchange_point_amount_bg"
+            android:gravity="center"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/okpoc_0010_str_008"
+            android:textColor="@color/color_002"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/plus10000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="11dp"
+            android:layout_weight="1"
+            android:background="@drawable/exchange_point_amount_bg"
+            android:gravity="center"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/okpoc_0010_str_009"
+            android:textColor="@color/color_002"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:id="@+id/plusAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/exchange_point_amount_bg"
+            android:gravity="center"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/okpoc_0010_str_010"
+            android:textColor="@color/color_002"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="7sp"
+        android:text="@string/okpoc_0010_str_011"
+        android:textColor="@color/color_001"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearAddAmount" />
+
+    <Button
+        android:id="@+id/btnExchangeConfirm"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:lineSpacingExtra="10sp"
+        android:text="@string/okpoc_0010_str_012"
+        android:textColor="@color/color_003"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

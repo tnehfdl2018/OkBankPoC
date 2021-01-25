@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="300dp"
+  android:layout_height="227dp"
+  android:background="@drawable/dialog_bg"
+  tools:context=".Okpoc_0010_dialog">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+      android:id="@+id/txtRequestPoint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="17sp"
+      android:textColor="@color/color_004"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      tools:text="2,300"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="17sp"
+      android:textColor="@color/color_005"
+      android:text="@string/okpoc_0010_str_013"
+      android:layout_marginStart="4dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txtRequestPoint"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <TextView
+    android:id="@+id/txtSubscript"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="normal"
+    android:textSize="17sp"
+    android:textColor="@color/color_005"
+    android:text="@string/okpoc_0010_str_014"
+    android:layout_marginTop="4dp"
+    app:layout_constraintTop_toBottomOf="@+id/constText"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constBefore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    app:layout_constraintTop_toBottomOf="@+id/txtSubscript"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+      android:id="@+id/txtBefore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="15sp"
+      android:textColor="@color/color_005"
+      android:text="@string/okpoc_0010_str_015"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+      android:id="@+id/txtBeforePoint"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="15sp"
+      android:textColor="@color/color_005"
+      android:layout_marginStart="4dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txtBefore"
+      tools:text="56,000"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="15sp"
+      android:textColor="@color/color_005"
+      android:text="@string/okpoc_0010_str_017"
+      android:layout_marginStart="4dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txtBeforePoint"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constAfter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    app:layout_constraintTop_toBottomOf="@+id/constBefore"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+      android:id="@+id/txtAfter"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="15sp"
+      android:textColor="@color/color_005"
+      android:text="@string/okpoc_0010_str_016"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+      android:id="@+id/txtAfterPointInfo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="15sp"
+      android:textColor="@color/color_005"
+      android:layout_marginStart="4dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txtAfter"
+      tools:text="56,000"/>
+
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="normal"
+      android:textSize="15sp"
+      android:textColor="@color/color_005"
+      android:text="@string/okpoc_0010_str_017"
+      android:layout_marginStart="4dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/txtAfterPointInfo"/>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <View
+    android:id="@+id/viewDivider"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/color_010"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:layout_constraintTop_toBottomOf="@+id/constAfter" />
+
+  <View
+    android:id="@+id/viewDivider2"
+    android:layout_width="1dp"
+    android:layout_height="14dp"
+    android:background="@color/color_010"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <TextView
+    android:id="@+id/txtCancel"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:textColor="@color/color_002"
+    android:text="@string/okpoc_0010_str_018"
+    android:gravity="center"
+    app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/viewDivider2"/>
+
+  <TextView
+    android:id="@+id/txtConfirm"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:textStyle="bold"
+    android:textSize="15sp"
+    android:textColor="@color/color_004"
+    android:text="@string/okpoc_0010_str_019"
+    android:gravity="center"
+    app:layout_constraintTop_toBottomOf="@+id/viewDivider"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/viewDivider2"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+  
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="phone_operator">
+        <item>통신사 선택</item>
+        <item>SKT</item>
+        <item>KT</item>
+        <item>LGU+</item>
+        <item>SKT 알뜰폰</item>
+        <item>KT 알뜰폰</item>
+        <item>LGU+ 알뜰폰</item>
+    </array>
+
+</resources>
